@@ -1,2 +1,2 @@
 # github_desktop_test
-Some messing up with github_desktop
+This text is changed in "some conflicts" branch
