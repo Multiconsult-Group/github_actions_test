@@ -7,9 +7,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
-      - name: Move to Tests directory
-        run: cd Tests
       - name: Run script
         uses: matlab-actions/run-command@v1
         with:
-          command: test_matlab
+          command: cd Tests; test_matlab
