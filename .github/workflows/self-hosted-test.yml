@@ -5,6 +5,9 @@ jobs:
   print-dir:
     runs-on: self-hosted
     steps:
+      - name: Check out repository
       - uses: actions/checkout@v4
-      - run: dir
-      - run: ping google.com
+      - name: Run MATLAB test script
+        uses: matlab-actions/run-command@v1
+        with:
+          command: test_matlab
